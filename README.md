@@ -1,4 +1,4 @@
-[![Unit Tests Status](https://github.com/ElectroRoute-Japan/mms-client/actions/workflows/check.yml/badge.svg)](https://github.com/ElectroRoute-Japan/mms-client/actions)
+[![Unit Tests Status](https://github.com/EnergyRoute-Japan/mms-client/actions/workflows/check.yml/badge.svg)](https://github.com/EnergyRoute-Japan/mms-client/actions)
 
 # Overview
 This repository contains a Python client that is capable of communication with the Market Management System (MMS), which handles requests related to Flex or Virtual Power Plant (VPP) trading. The underlying library relies on SOAP communication, which is a pain to work with at the best of times. This particular SOAP API adds its own special layer of obnoxiousness, however. As such, it was deemed useful to have a client which would obfuscate most, if not all of this away from the user.
@@ -30,7 +30,7 @@ The MMS has two separate endpoints, depending on whether you want to access mark
 # Object Hierarchy
 The object hierarchy contained in this project is not trivial, and perhaps that reflects a bit of overengineering on our part. However, we chose the paradigm we did to reduce the number of types which had to be exposed to the user. The diagram below indicates how this hierarchy works:
 
-![MMS Client Object Hierarchy](https://github.com/ElectroRoute-Japan/mms-client/raw/main/docs/mmsclient_hierarchy.drawio.png)
+![MMS Client Object Hierarchy](https://github.com/EnergyRoute-Japan/mms-client/raw/main/docs/mmsclient_hierarchy.drawio.png)
 
 Note that there are some types here that are shared between the request and response: mainly, anything inheriting from `mms_client.types.base.Envelop` or `mms_client.types.base.Payload`. For users of the client, only the Payload types need ever be used. Everything else has been obfuscated away, so it is unecessary for the user to have access to these. However, we will explain our reasoning here to provide additional context.
 
