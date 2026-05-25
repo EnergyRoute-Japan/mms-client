@@ -5,7 +5,7 @@ description = "API client for accessing the MMS"
 authors = ["Ryan Wood <ryan.wood@electroroute.co.jp>"]
 readme = "README.md"
 packages = [{ include = "mms_client", from = "src" }]
-homepage = "https://github.com/ElectroRoute-Japan/mms-client"
+homepage = "https://github.com/EnergyRoute-Japan/mms-client"
 classifiers = [
     "Development Status :: 5 - Production/Stable",
     "Framework :: Pydantic :: 2",
