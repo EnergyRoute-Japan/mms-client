@@ -2,7 +2,7 @@
 name = "mms_client"
 version = "v1.12.3"
 description = "API client for accessing the MMS"
-authors = ["Ryan Wood <ryan.wood@electroroute.co.jp>"]
+authors = ["Ryan Wood <ryan.wood@erj.co.jp>"]
 readme = "README.md"
 packages = [{ include = "mms_client", from = "src" }]
 homepage = "https://github.com/EnergyRoute-Japan/mms-client"
